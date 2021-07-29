@@ -1,0 +1,28 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+header {
+    color: blue;
+    /* position: fixed; */
+}
+
+.navBar {
+    display: inline;
+    justify-content: flex-end;
+}
+a .hover {
+    color: brown;
+}
+
+.navLink {
+    color: green;
+    padding: 10px;
+}
+
+.info {
+    display: block;
+}
+
+.sampleText {
+    color: orange;
+}
