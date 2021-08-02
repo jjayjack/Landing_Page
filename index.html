@@ -15,25 +15,30 @@
         <nav class="navBar">
             <a class="navLink">Home</a>
             <a class="navLink">About</a>
-            <a class="navLink">Contact</a>
+            <a href="#contact" class="navLink">Contact</a>
         </nav>
     </header>
+    <section class="main">
+    <div class="photo">
+        <img class="image" src="https://picsum.photos/1500/300" alt="Random Photo from https://picsum.photos/">
+    </div>
     <div class="info">
         <h3 class="header">Vel modi aperiamvoluptas facere quos ab fugiat blanditiis?</h3>
         <p class="sampleText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et laboriosam, dolor
             blanditiis, optio obcaecati odit esse molestias numquam libero laborum iste explicabo, suscipit beatae
             quisquam cumque dolores. At, nisi qui!</p>
-
     </div>
-    <div class="formContainer">
+</section>
+
+    <div id="contact" class="formContainer">
         <form action="/action_page.php">
-            <label for="firstName">First Name</label>
+            <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName">
-            <label for="lastName">Last Name</label>
+            <label for="lastName">Last Name:</label>
             <input type="text" id="lastName" name="lastName">
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input type="email">
-            <input type="submit">
+            <input type="submit" value="Send" onClick="alert('Information Sent')">
         </form>
     </div>
     <footer>
