@@ -5,12 +5,14 @@
     --tertiary: #777DA7;
     --quaternary: #94C9A9;
     --quinary: #C6ECAE;
+    box-sizing: border-box;
 }
-header, h3 {
+/* all headers */
+.header {
     color: var(--primary);
-
+    text-align: center;
 }
-
+/* navigation start */
 .navBar {
     display: inline;
     justify-content: flex-end;
@@ -24,6 +26,9 @@ a:hover {
     color: var(--quaternary);
     padding: 10px;
 }
+/* nav ends */
+
+/* main photo */
 .photo {
     margin-top: 10px;
     border: var(--quinary) dashed 2px;
@@ -36,11 +41,6 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    /* display: block; */
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    -webkit-filter: blur(1px); */
 }
 
 .image_header {
@@ -51,12 +51,47 @@ a:hover {
     transform: translate(-50%, -50%);
     color: white;
 }
+/* photo ends */
+
+/* main content */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .info {
-    display: block;
-    margin: 20px;
+    float: left;
+    border: var(--quinary) dashed 2px;
+    margin: 1px;
+    padding: 5px;
+    line-height: 20px;
 }
+
+.info.left, .info.right {
+    width: 23%;
+}
+.left {
+    text-align: right;
+}
+.right {
+    text-align: left;
+}
+
+.info.center {
+    width: 50%;
+    text-align: center;
+}
+
 
 .sampleText {
     color: var(--tertiary);
+
 }
+
+@media screen and (max-width: 600px) {
+    .info.left, .info.center, .info.right, .header.left, .header.right{
+      width: 100%;
+      text-align: center;
+    }
+  }
